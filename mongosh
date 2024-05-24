@@ -13,3 +13,13 @@ roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
  );
 
 
+===================
+use admin
+
+db.createUser({
+  user: "testUser",
+  pwd: "password",
+  roles: [
+    { role: "readWrite", db: "<your_database>" }
+  ]
+})
