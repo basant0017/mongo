@@ -1,0 +1,15 @@
+Access the MongoDB shell:
+mongosh
+Switch to the MongoDB admin database:
+
+use admin
+Create a user with ‘userAdminAnyDatabase‘ permissions:
+db.createUser(
+{
+user: "zabbix_mon",
+ pwd: "zabbix_mon",
+roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+ }
+ );
+
+
