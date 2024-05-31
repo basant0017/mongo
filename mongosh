@@ -44,3 +44,15 @@ net:
  verify the connection write bellow code in your local system terminal
 
 nc -zv <your_server_ip> 27017
+
+
+
+==============
+In your case you need to follow the following steps.
+
+Setup the remote machine to block all connections to port 27017
+Enable remote machine to only accept connections from your local machine
+Setup credentials with MongoDB
+Connect with client using credentials.
+
+If you are not sure how to do any of this steps. Check out a blog post that I wrote that goes more in details how to do this.
