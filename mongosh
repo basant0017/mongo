@@ -23,3 +23,12 @@ db.createUser({
     { role: "readWrite", db: "<your_database>" }
   ]
 })
+
+
+
+MongoDB 6.0.1
+
+bindIp: 127.0.0.1;192.168.1.0
+After change just restart mongodb server:
+
+sudo systemctl restart mongod
