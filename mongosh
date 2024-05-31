@@ -41,3 +41,6 @@ net:
   bindIpAll: true
 
 
+ verify the connection write bellow code in your local system terminal
+
+nc -zv <your_server_ip> 27017
